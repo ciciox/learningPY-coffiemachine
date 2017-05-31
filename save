@@ -1,7 +1,0 @@
-print('Welcome please select your choise')
-print('Press:')
-print('1. For Espresso')
-print('2. For Double Espresso')
-print('3. For Americano')
-print('4. For Cappuccino')
-selection = input (int())

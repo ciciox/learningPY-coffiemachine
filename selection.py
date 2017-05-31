@@ -1,12 +1,11 @@
 confirm = ('')
 
 def Selection():
-    print('Press:')
+    import time
+    #print('Press:')
     #time.sleep(1)
-    print('1. For Espresso')
-    print('2. For Double Espresso')
-    print('3. For Americano')
-    print('4. For Cappuccino')
+    mylist = ['1. For Espresso','2. For Double Espresso','3. For Americano','4. For Cappuccino']
+    print("\n".join(mylist))
     selection = int(input ())
 
     if selection == 1:
@@ -47,4 +46,4 @@ def ConfirmSel(): ## this function is not working ## is not getting the Return
     else:
         print ("Your selection hasn't been recognise ")
         print('Please make again your choose')
-        exit()
+        #exit()

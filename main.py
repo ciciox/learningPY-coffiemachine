@@ -1,6 +1,6 @@
 import time
-from selection import Selection, ConfirmSel
-from payment import Payment, Change
+from selection import Main
+
 
 
 print('Welcome please select your choice')
@@ -9,5 +9,5 @@ print('Welcome please select your choice')
 #### restart point
 
 #print confirm
-ConfirmSel()
-print ('now5')
+Main()
+print ('Your coffie now is Ready')

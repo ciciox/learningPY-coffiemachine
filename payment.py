@@ -3,18 +3,14 @@ def Payment():
     print('The cost for''is 1£')
     print('Please insert coin')
     cash = float(input())
-    ## payment is not working need to add the count to the main cash variable
     while cash < 1:
-        print('The total is', cash,'£')
-        print('You need to add more money')
-        cash = float(input() + cash)
-        return (cash)
-    else:
-        print('caffe')
-
-    return ()
+        print('Your credit now is', cash,'£')
+        print('You still need to add other',-cash+1,'cent')
+        newcash = float(input())
+        cash = newcash + cash
 
 def Change():
+
+    ## need to be implemented ##
     return ()
 
-Payment()

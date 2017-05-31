@@ -20,10 +20,6 @@ def ConfirmSel():
             print('Please press "Y" to confirm')
             confirm = input()
 
-
-
-
-
 def Selection():
     import time
     print('Press:')
@@ -45,12 +41,4 @@ def Selection():
         print('Please make again your choose')
     ## manage unexected value return to the begin of IF
     print('You have selected ',sel)
-'''
-
-    print('Please press "Y" to confirm')
-    confirm = input()
-
-    return confirm
-'''
-
 

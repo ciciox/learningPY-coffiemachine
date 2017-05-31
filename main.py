@@ -43,35 +43,3 @@ else:
     print ("Your selection hasn't been recognise ")
     print('Please make again your choose')
 
-'''
-
-
-if selection == 1:
-    print('You have selected "Espresso"')
-    print('Please press "Y" to confirm')
-    confirm = input()
-    if confirm == y or Y:
-        print('Your coffie will be ready shortly ')
-        time.sleep(2)
-    else:
-       print ("Your selection hasn't been recognise ")
-        #### restart from the second IF
-
-elif selection == 2:
-    print('You have selected "Double Espresso"')
-    print('Please press "Y" to confirm')
-    ##
-    print('Please press "Y" to confirm')
-
-else:
-    print ("Your selection hasn't been recognise ")
-    print('Please make again your choose')
-    '''
-'''
-elif selection = 2:
-
-elif selection = 3:
-
-else selection = 4:
-'''
-

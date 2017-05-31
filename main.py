@@ -32,5 +32,3 @@ else selection = 4:
 
 
 '''
-s
-s

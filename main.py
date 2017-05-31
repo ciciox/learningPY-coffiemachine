@@ -1,4 +1,5 @@
 import time
+from selection import
 print('Welcome please select your choice')
 #time.sleep(1)
 print('Press:')
@@ -8,6 +9,10 @@ print('2. For Double Espresso')
 print('3. For Americano')
 print('4. For Cappuccino')
 #### restart point
+
+'''
+this part works but will be migrate to became a function '''
+'''
 
 selection = int(input ())
 
@@ -29,6 +34,7 @@ print('Please press "Y" to confirm')
 
 confirm = input()
 # restart point
+'''
 
 if confirm == ('y'):
         #or 'Y':

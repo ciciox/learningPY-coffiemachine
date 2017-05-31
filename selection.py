@@ -1,8 +1,34 @@
-confirm = ('')
+
+def ConfirmSel():
+    #fix IF to get multiple
+    confirm = Selection()
+    value = ['y','yes','Y','YES']
+    import time
+
+    if confirm in value:
+    #if confirm == yes:
+    #if confirm == 'y' or 'Y':
+        print('Your coffie is getting ready')
+        time.sleep(1)
+        print('Please Wait')
+    else:
+        print ("Your selection hasn't been recognise ")
+        print('Please make again your choose')
+        #### repite the IF
+'''
+    while confirm in value:
+        print ("Your selection hasn't been recognise ")
+        print('Please make again your choose')
+    else:
+        print('Your coffie is getting ready')
+        time.sleep(1)
+        print('Please Wait')
+'''
+
 
 def Selection():
     import time
-    #print('Press:')
+    print('Press:')
     #time.sleep(1)
     mylist = ['1. For Espresso','2. For Double Espresso','3. For Americano','4. For Cappuccino']
     print("\n".join(mylist))
@@ -24,26 +50,8 @@ def Selection():
     print('You have selected ',sel)
     print('Please press "Y" to confirm')
     confirm = input()
-    print( 'is 1 ',confirm )
-    #return confirm
-    ### after the return the bariable is not worling
 
-    print( 'is 2',confirm )
-    #restart point
+    return confirm
 
 
-def ConfirmSel(): ## this function is not working ## is not getting the Return
-    #from selection import Selection(confirm)
-
-    import time
-    print( 'is 3',confirm )
-    if 'y' in confirm:
-    #if confirm == yes:
-    #if confirm == 'y' or 'Y':
-        print('Your coffie is in preparation')
-        time.sleep(1)
-        print('Please Wait')
-    else:
-        print ("Your selection hasn't been recognise ")
-        print('Please make again your choose')
-        #exit()
+      #restart point

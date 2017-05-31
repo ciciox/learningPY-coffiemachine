@@ -1,5 +1,11 @@
 
-def selectcoffie():
+def Selection():
+    print('Press:')
+    #time.sleep(1)
+    print('1. For Espresso')
+    print('2. For Double Espresso')
+    print('3. For Americano')
+    print('4. For Cappuccino')
     selection = int(input ())
 
     if selection == 1:
@@ -14,14 +20,13 @@ def selectcoffie():
         print ("Your selection hasn't been recognise ")
         print('Please make again your choose')
 
-
     print('You have selected ', sel)
     print('Please press "Y" to confirm')
 
     confirm = input()
     #restart point
 
-def confirmsel():
+def ConfirmSel():
     if confirm == ('y'):
         print('Your coffie is in preparation')
         time.sleep(1)

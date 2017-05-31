@@ -1,5 +1,5 @@
 
-def ConfirmSel():
+'''def ConfirmSel():
     #fix IF to get multiple
     confirm = Selection()
     value = ['y','yes','Y','YES']
@@ -16,14 +16,36 @@ def ConfirmSel():
         print('Please make again your choose')
         #### repite the IF
 '''
-    while confirm in value:
-        print ("Your selection hasn't been recognise ")
-        print('Please make again your choose')
+
+def ConfirmSel():
+
+    confirm = Selection()
+
+    value = ['y','yes','Y','YES']
+    import time
+    print('Please press "Y" to confirm')
+    confirm = input()
+    while confirm is not value:
+
+        if confirm in value:
+        #if confirm == yes:
+        #if confirm == 'y' or 'Y':
+            print('Your coffie is getting ready')
+            time.sleep(1)
+            print('Please Wait')
+            continue
+        else:
+            print ("Your selection hasn't been recognise ")
+            print('Please make again your choose')
+            print('Please press "Y" to confirm')
+            confirm = input()
+
     else:
-        print('Your coffie is getting ready')
-        time.sleep(1)
-        print('Please Wait')
-'''
+        print('Please press "Y" to confirm')
+        confirm = input()
+
+
+
 
 
 def Selection():
@@ -46,12 +68,13 @@ def Selection():
         print ("Your selection hasn't been recognise ")
         print('Please make again your choose')
     ## manage unexected value return to the begin of IF
-
     print('You have selected ',sel)
+'''
+
     print('Please press "Y" to confirm')
     confirm = input()
 
     return confirm
+'''
 
 
-      #restart point

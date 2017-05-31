@@ -29,11 +29,6 @@ elif selection = 2:
 elif selection = 3:
 
 else selection = 4:
-
-
-<<<<<<< HEAD
 '''
 
-=======
-'''
->>>>>>> f3c9989e44e9ad4ca47023e48643cdbdc8da54f1
+test

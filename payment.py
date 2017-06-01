@@ -1,5 +1,6 @@
-
+credit = 0
 def Payment():
+    global credit
     print('The cost for''is 1£')
     print('Please insert coin')
     credit = float(input())
@@ -11,8 +12,8 @@ def Payment():
     #return credit
 
 # uncomment for debugging
-#Payment()
-
+Payment()
+print(credit)
 #print (credit)
 
 

@@ -15,7 +15,6 @@ def Main():
             time.sleep(1)
             print('Your coffie is getting ready')
             time.sleep(1)
-            print('Please Wait')
             break
         else:
             print ("Your selection hasn't been recognise ")

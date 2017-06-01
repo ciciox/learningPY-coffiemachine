@@ -2,12 +2,19 @@
 def Payment():
     print('The cost for''is 1£')
     print('Please insert coin')
-    cash = float(input())
-    while cash < 1:
-        print('Your credit now is', cash,'£')
-        print('You still need to add other',-cash+1,'cent')
-        newcash = float(input())
-        cash = newcash + cash
+    credit = float(input())
+    while credit < 1:
+        print('Your credit now is', credit,'£')
+        print('You still need to add other',-credit+1,'cent')
+        newcredit = float(input())
+        credit = newcredit + credit
+    #return credit
+
+# uncomment for debugging
+#Payment()
+
+#print (credit)
+
 
 def Change():
 

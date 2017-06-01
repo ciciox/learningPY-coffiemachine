@@ -12,9 +12,9 @@ def Main():
         if confirm in value:
             Payment()
             print('Please Wait')
-            time.sleep(1)
+            #time.sleep(1)
             print('Your coffie is getting ready')
-            time.sleep(1)
+            #time.sleep(1)
             break
         else:
             print ("Your selection hasn't been recognise ")

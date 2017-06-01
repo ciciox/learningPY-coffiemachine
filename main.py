@@ -10,7 +10,7 @@ credit = 0
 Main()
 #time.sleep(1)
 print ('Your coffie now is Ready')
-credit = Payment(credit)
+
 print (credit)
 
 #

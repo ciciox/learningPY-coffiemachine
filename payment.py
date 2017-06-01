@@ -15,7 +15,6 @@ def Payment():
 
 def Payment():
     global credit
-    global currentcredit
     print('The cost for''is 1£')
     print('Please insert coin')
     credit = float(input())
@@ -26,11 +25,9 @@ def Payment():
         credit = newcredit + credit
 
 # uncomment for debugging
-Payment()
+#Payment()
 
-print (credit)
-
-
+#print (credit)
 
 def Change():
 

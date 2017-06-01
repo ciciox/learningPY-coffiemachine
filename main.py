@@ -1,18 +1,23 @@
-from payment import Payment, Change
+from payment import Payment
 from selection import Main
 
 import payment
 import time
 
-print('Welcome please select your choice')
-
-#time.sleep(1)
-
 Main()
-#time.sleep(1)
+time.sleep(2)
 print ('Your coffie now is Ready')
 
-print (payment.credit)
-#
-#balance = Payment()
-#print(balance)
+### for debug to check if the variable has been imported
+print ('Your remaining credit is',payment.credit -1)
+time.sleep(1)
+print('Please collect your change and enjoy')
+credit = 0
+
+##create a for to print multiple line
+
+print('')
+print('')
+print('')
+
+Main()

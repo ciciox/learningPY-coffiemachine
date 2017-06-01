@@ -1,8 +1,10 @@
-from payment import Payment, Change
+from payment import Payment
 
 def Main():
-    confirm = Selection()
     import time
+    print('Welcome please select your choice')
+    time.sleep(1)
+    confirm = Selection()
     print('Please press "Y" to confirm')
     confirm = input()
     value = ['y', 'yes', 'Y', 'YES']
@@ -12,9 +14,9 @@ def Main():
         if confirm in value:
             Payment()
             print('Please Wait')
-            #time.sleep(1)
+            time.sleep(1)
             print('Your coffie is getting ready')
-            #time.sleep(1)
+            time.sleep(1)
             break
         else:
             print ("Your selection hasn't been recognise ")
@@ -42,3 +44,4 @@ def Selection():
         print ("Your selection hasn't been recognise ")
         print('Please make again your choose')
     print('You have selected',sel)
+

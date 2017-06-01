@@ -1,4 +1,3 @@
-from payment import Payment
 from selection import Main
 
 import payment
@@ -14,10 +13,11 @@ time.sleep(1)
 print('Please collect your change and enjoy')
 credit = 0
 
-##create a for to print multiple line
+##create a for to print multiple line  or clearscreen for all platform
 
 print('')
 print('')
 print('')
 
+# restart app
 Main()

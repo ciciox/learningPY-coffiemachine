@@ -1,4 +1,4 @@
-credit = 0
+
 def Payment():
     global credit
     print('The cost for''is 1£')

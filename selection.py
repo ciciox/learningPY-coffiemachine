@@ -32,8 +32,7 @@ def Main():
                 print('Please make again your choose')
                 print('Please press "Y" to confirm')
                 confirm = input()
-        #add handle exception
-
+        #add handle exceptions
 
 def Selection():
     import time

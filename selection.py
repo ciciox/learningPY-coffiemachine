@@ -6,9 +6,9 @@ def Main():
     time.sleep(1)
     confirm = Selection()
     print('Please press "Y" to confirm')
-    confirm = input()
-    value = ['y', 'yes', 'Y', 'YES']
-
+    confirm = input().lower()
+    value = ['y', 'yes']
+   
     while confirm is not value:
 
         if confirm in value:

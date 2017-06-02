@@ -1,3 +1,5 @@
+__author__ = 'Giuseppe Faro'
+
 from selection import Main
 
 import payment

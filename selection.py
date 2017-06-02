@@ -12,7 +12,7 @@ def Main():
     while confirm is not value:
 
         if confirm in value:
-            Payment()
+            Payment(sel)
             print('Please Wait')
             time.sleep(1)
             print('Your coffie is getting ready')
@@ -41,7 +41,7 @@ def Selection():
     mylist = ['1. For Espresso','2. For Double Espresso','3. For Americano','4. For Cappuccino']
     print("\n".join(mylist))
     selection = int(input ())
-
+    global sel
     if selection == 1:
         sel = "Espresso"
     elif selection == 2:
@@ -54,4 +54,6 @@ def Selection():
         print ("Your selection hasn't been recognise ")
         print('Please make again your choose')
     print('You have selected',sel)
+
+
 

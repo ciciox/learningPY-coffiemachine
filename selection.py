@@ -40,9 +40,8 @@ def Selection():
     time.sleep(1)
     mylist = ['1. For Espresso','2. For Double Espresso','3. For Americano','4. For Cappuccino']
     print("\n".join(mylist))
-    selection = 0
+    selection = int(input())
     while selection != mylist:
-        selection = int(input ())
         global sel
         if selection == 1:
             sel = "Espresso"

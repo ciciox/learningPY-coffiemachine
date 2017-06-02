@@ -5,10 +5,10 @@ def Main():
     print('Welcome please select your choice')
     time.sleep(1)
     confirm = Selection()
-    print('Please press "Y" to confirm')
+    print('Please press "Y" to confirm or "N" to cancel')
     confirm = input().lower()
     value = ['y', 'yes']
-   
+    denyvalue = ['n', 'no']
     while confirm is not value:
 
         if confirm in value:
@@ -18,11 +18,21 @@ def Main():
             print('Your coffie is getting ready')
             time.sleep(1)
             break
-        else:
-            print ("Your selection hasn't been recognise ")
-            print('Please make again your choose')
+
+        elif confirm in denyvalue:
+            print('Please made again your choise')
+            confirm = Selection()
             print('Please press "Y" to confirm')
-            confirm = input()
+            confirm = input().lower()
+            value = ['y', 'yes']
+            denyvalue = ['n', 'no']
+
+        else:
+                print ("Your selection hasn't been recognise ")
+                print('Please make again your choose')
+                print('Please press "Y" to confirm')
+                confirm = input()
+        #add handle exception
 
 def Selection():
     import time

@@ -15,12 +15,12 @@ def Main():
             Payment(sel)
             print('Please Wait')
             time.sleep(1)
-            print('Your coffie is getting ready')
+            print('Your coffee is getting ready')
             time.sleep(1)
             break
 
         elif confirm in denyvalue:
-            print('Please made again your choise')
+            print('Please made again your choice')
             confirm = Selection()
             print('Please press "Y" to confirm')
             confirm = input().lower()

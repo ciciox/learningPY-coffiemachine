@@ -18,11 +18,12 @@ credit = 0
 ## Clear Screen part
 
 import platform
-os = platform.system()
+import os
+op = platform.system()
 
-if os == Windows:
+if op == ('Windows'):
     os.system('cls')
-elif os == Linux:
+elif op == Linux:
     os.system('clear')
 else:
     print("\n" * 70)

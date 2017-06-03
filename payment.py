@@ -1,4 +1,4 @@
-from selection import *
+from core import *
 
 def Payment(sel):
     global credit

@@ -2,6 +2,9 @@ from payment import Payment
 
 def Confirmation():
     import time
+    from payment import Payment
+    import payment
+
     #confirm = Selection()
     print('Please press "Y" to confirm or "N" to cancel')
     confirm = input().lower()
@@ -30,7 +33,16 @@ def Confirmation():
                 print('Please make again your choose')
                 print('Please press "Y" to confirm')
                 confirm = input()
-        #add handle exceptions
+        break
+    time.sleep(2)
+    print('Your coffie now is Ready')
+    print('Your remaining credit is', payment.credit - 1)
+    time.sleep(1)
+    print('Please collect your change and enjoy your drink')
+    time.sleep(4)
+    credit = 0
+
+                #add handle exceptions
 
 
 def Selection():

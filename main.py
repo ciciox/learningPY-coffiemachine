@@ -1,29 +1,16 @@
 __author__ = 'Giuseppe Faro'
-
-from selection import *
-import payment
-import time
+from core import *
 
 
 def Workflow():
+
     Selection()
     Confirmation()
-
-    time.sleep(2)
-    print('Your coffie now is Ready')
-    print('Your remaining credit is', payment.credit - 1)
-    time.sleep(1)
-    print('Please collect your change and enjoy your drink')
-    time.sleep(4)
-    credit = 0
-
     Clearscreen()
 
 
-
 def Clearscreen():
-    ## Clear Screen part
-
+    ## Sys Clear Screen function
     import platform
     import os
     op = platform.system()
@@ -35,6 +22,7 @@ def Clearscreen():
     else:
         print("\n" * 70)
 
-# Restart app
+
+# Start Application
 while Workflow() != 0:
     Workflow()

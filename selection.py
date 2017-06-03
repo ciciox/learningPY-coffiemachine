@@ -1,10 +1,8 @@
 from payment import Payment
 
-def Main():
+def Confirmation():
     import time
-    print('Welcome please select your choice')
-    time.sleep(1)
-    confirm = Selection()
+    #confirm = Selection()
     print('Please press "Y" to confirm or "N" to cancel')
     confirm = input().lower()
     value = ['y', 'yes']
@@ -34,13 +32,16 @@ def Main():
                 confirm = input()
         #add handle exceptions
 
+
 def Selection():
     import time
+    print("Welcome,\nplease select a drink:")
+    time.sleep(1)
     print('Press:')
     time.sleep(1)
     mylist = ['1. For Espresso','2. For Double Espresso','3. For Americano','4. For Cappuccino']
     print("\n".join(mylist))
-    selection = int(input())
+    selection = int(input())  #this part create an exception if the value is not INT
     while selection != mylist:
         global sel
         if selection == 1:

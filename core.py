@@ -20,20 +20,19 @@ def Confirmation():
             time.sleep(1)
             break
 
-        elif confirm in denyvalue:
+        elif confirm in denyvalue:  # here something wrong
             print('Please made again your choice')
             confirm = Selection()
-            print('Please press "Y" to confirm')
+            print('Please press "Y" to confirm', sel, 'or "N" to cancel')
             confirm = input().lower()
             value = ['y', 'yes']
             denyvalue = ['n', 'no']
 
         else:
                 print ("Your selection hasn't been recognise ")
-                print('Please make again your choose')
-                print('Please press "Y" to confirm')
+                print('Please press "Y" to confirm',sel,'or "N" to cancel')
                 confirm = input()
-        break
+        continue
     time.sleep(2)
     print('Your coffie now is Ready')
     print('Your remaining credit is', payment.credit - 1)
@@ -51,34 +50,59 @@ def Selection():
     time.sleep(1)
     print('Press:')
     time.sleep(1)
+    global mylist
     mylist = ['1. For Espresso','2. For Double Espresso','3. For Americano','4. For Cappuccino']
     print("\n".join(mylist))
-    selection = int(input())  #this part create an exception if the value is not INT
+    # this part create an exception if the value is not INT
+    #election = (input())
+    Eccezione()
+
+    print('Prima verifica passata con successo'
+          )
+
+####delete up to here
+    global sel
+    if selection == 1:
+        sel = "Espresso"
+
+    elif selection == 2:
+        sel = "Double Espresso"
+
+    elif selection == 3:
+        sel = "Americano"
+
+    elif selection == 4:
+        sel = "Cappuccino"
+    else:
+        try:
+            print('seconda eccezione')
+            Eccezione()
+
+            #global sel
+        #### this part of the except is not working
+        except ValueError:
+            print('value error 2')
+    print('You have selected', sel)
+
+
+def Eccezione():
+    global selection
+    selection = (input())
+    print('debug')
     while selection != mylist:
-        global sel
-        if selection == 1:
-            sel = "Espresso"
-            break
-        elif selection == 2:
-            sel = "Double Espresso"
-            break
-        elif selection == 3:
-            sel = "Americano"
-            break
-        elif selection == 4:
-            sel = "Cappuccino"
-            break
+        if type(selection) == int:
+            print('yes')
+            continue
         else:
             try:
+                selection = int(selection)
+                print('conversione')
+                #Eccezione()
+                break
+            except ValueError:
                 print("Your selection hasn't been recognise ")
                 print('Please make again your choose:')
                 print("\n".join(mylist))
+                selection = (input())
+                print('eccezione value erro')
                 continue
-            #### this part of the except is not working
-            except ValueError:
-                print('value error 2')
-    print('You have selected',sel)
-
-
-
-

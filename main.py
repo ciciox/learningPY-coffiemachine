@@ -9,10 +9,8 @@ def Workflow():
     Selection()
     Confirmation()
 
-
     time.sleep(2)
     print('Your coffie now is Ready')
-
     print('Your remaining credit is', payment.credit - 1)
     time.sleep(1)
     print('Please collect your change and enjoy your drink')

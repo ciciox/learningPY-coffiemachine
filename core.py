@@ -57,8 +57,7 @@ def Selection():
     #election = (input())
     Eccezione()
 
-    print('Prima verifica passata con successo'
-          )
+   #print('Prima verifica passata con successo'          )
 
 ####delete up to here
     global sel
@@ -88,7 +87,7 @@ def Selection():
 def Eccezione():
     global selection
     selection = (input())
-    print('debug')
+   # print('debug')
     while selection != mylist:
         if type(selection) == int:
             print('yes')
@@ -96,7 +95,7 @@ def Eccezione():
         else:
             try:
                 selection = int(selection)
-                print('conversione')
+                #print('conversione')
                 #Eccezione()
                 break
             except ValueError:
